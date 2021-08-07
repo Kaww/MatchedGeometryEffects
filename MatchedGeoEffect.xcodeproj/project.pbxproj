@@ -14,6 +14,8 @@
 		59B5A93F26BC6EB000E74861 /* UnwrappingFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A93E26BC6EB000E74861 /* UnwrappingFields.swift */; };
 		59B5A94126BC6FC500E74861 /* AppleMusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A94026BC6FC500E74861 /* AppleMusicPlayer.swift */; };
 		59B5A94426BC84AE00E74861 /* GridExpandingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A94326BC84AE00E74861 /* GridExpandingItems.swift */; };
+		59B5A95D26BEDC7600E74861 /* Pickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A95C26BEDC7600E74861 /* Pickers.swift */; };
+		59B5A95F26BEEB1B00E74861 /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A95E26BEEB1B00E74861 /* Layouts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		59B5A93E26BC6EB000E74861 /* UnwrappingFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnwrappingFields.swift; sourceTree = "<group>"; };
 		59B5A94026BC6FC500E74861 /* AppleMusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicPlayer.swift; sourceTree = "<group>"; };
 		59B5A94326BC84AE00E74861 /* GridExpandingItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridExpandingItems.swift; sourceTree = "<group>"; };
+		59B5A95C26BEDC7600E74861 /* Pickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pickers.swift; sourceTree = "<group>"; };
+		59B5A95E26BEEB1B00E74861 /* Layouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				59B5A93E26BC6EB000E74861 /* UnwrappingFields.swift */,
 				59B5A94026BC6FC500E74861 /* AppleMusicPlayer.swift */,
 				59B5A94326BC84AE00E74861 /* GridExpandingItems.swift */,
+				59B5A95C26BEDC7600E74861 /* Pickers.swift */,
+				59B5A95E26BEEB1B00E74861 /* Layouts.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B5A95D26BEDC7600E74861 /* Pickers.swift in Sources */,
+				59B5A95F26BEEB1B00E74861 /* Layouts.swift in Sources */,
 				5985419326BBC92D0057BF3B /* ContentView.swift in Sources */,
 				59B5A94126BC6FC500E74861 /* AppleMusicPlayer.swift in Sources */,
 				59B5A94426BC84AE00E74861 /* GridExpandingItems.swift in Sources */,
