@@ -14,7 +14,7 @@ struct AppleMusicPlayer: View {
     private let titleId = "titleId"
     @Namespace private var titleNamespace
     
-    @State private var isExpanded = true
+    @State private var isExpanded = false
 
     var body: some View {
         VStack {
