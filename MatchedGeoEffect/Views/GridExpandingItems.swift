@@ -1,10 +1,3 @@
-//
-//  GridExpandingItems.swift
-//  MatchedGeoEffect
-//
-//  Created by KAWRANTIN LE GOFF on 05/08/2021.
-//
-
 import SwiftUI
 
 struct Item: Identifiable {
@@ -40,7 +33,7 @@ struct GridExpandingItems: View {
     private let backgroundId = "background"
     @Namespace private var backgroundNamespace
     
-    @State private var selectedItem: Item?// = Item(id: UUID().uuidString, title: "Item 1", subtitle: "I'm the first item")
+    @State private var selectedItem: Item?// = Item(id: UUID().uuidString, title: "Item 1", subtitle: "I'm the first item", color: .blue.opacity(0.5))
     
     var body: some View {
         if let item = selectedItem {
@@ -64,6 +57,8 @@ struct GridExpandingItems: View {
                                 .foregroundColor(.white)
                         }
                     }
+
+                    Spacer()
                     
                     subtitle(for: item)
                     

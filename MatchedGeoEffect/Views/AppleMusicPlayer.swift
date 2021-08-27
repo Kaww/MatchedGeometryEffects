@@ -1,10 +1,3 @@
-//
-//  AppleMusicPlayer.swift
-//  MatchedGeoEffect
-//
-//  Created by KAWRANTIN LE GOFF on 05/08/2021.
-//
-
 import SwiftUI
 
 struct AppleMusicPlayer: View {

@@ -16,6 +16,8 @@
 		59B5A94426BC84AE00E74861 /* GridExpandingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A94326BC84AE00E74861 /* GridExpandingItems.swift */; };
 		59B5A95D26BEDC7600E74861 /* Pickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A95C26BEDC7600E74861 /* Pickers.swift */; };
 		59B5A95F26BEEB1B00E74861 /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A95E26BEEB1B00E74861 /* Layouts.swift */; };
+		90C5689226D9064F0004EEF0 /* Toto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5689126D9064F0004EEF0 /* Toto.swift */; };
+		90C5689426D909270004EEF0 /* CardDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5689326D909270004EEF0 /* CardDrawer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		59B5A94326BC84AE00E74861 /* GridExpandingItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridExpandingItems.swift; sourceTree = "<group>"; };
 		59B5A95C26BEDC7600E74861 /* Pickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pickers.swift; sourceTree = "<group>"; };
 		59B5A95E26BEEB1B00E74861 /* Layouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
+		90C5689126D9064F0004EEF0 /* Toto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toto.swift; sourceTree = "<group>"; };
+		90C5689326D909270004EEF0 /* CardDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDrawer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +87,13 @@
 		59B5A94226BC712C00E74861 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				90C5689326D909270004EEF0 /* CardDrawer.swift */,
 				59B5A93E26BC6EB000E74861 /* UnwrappingFields.swift */,
 				59B5A94026BC6FC500E74861 /* AppleMusicPlayer.swift */,
 				59B5A94326BC84AE00E74861 /* GridExpandingItems.swift */,
 				59B5A95C26BEDC7600E74861 /* Pickers.swift */,
 				59B5A95E26BEEB1B00E74861 /* Layouts.swift */,
+				90C5689126D9064F0004EEF0 /* Toto.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +170,8 @@
 				59B5A95D26BEDC7600E74861 /* Pickers.swift in Sources */,
 				59B5A95F26BEEB1B00E74861 /* Layouts.swift in Sources */,
 				5985419326BBC92D0057BF3B /* ContentView.swift in Sources */,
+				90C5689426D909270004EEF0 /* CardDrawer.swift in Sources */,
+				90C5689226D9064F0004EEF0 /* Toto.swift in Sources */,
 				59B5A94126BC6FC500E74861 /* AppleMusicPlayer.swift in Sources */,
 				59B5A94426BC84AE00E74861 /* GridExpandingItems.swift in Sources */,
 				59B5A93F26BC6EB000E74861 /* UnwrappingFields.swift in Sources */,

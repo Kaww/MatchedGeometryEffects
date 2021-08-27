@@ -1,10 +1,3 @@
-//
-//  DayPicker.swift
-//  MatchedGeoEffect
-//
-//  Created by KAWRANTIN LE GOFF on 07/08/2021.
-//
-
 import SwiftUI
 
 struct Pickers: View {

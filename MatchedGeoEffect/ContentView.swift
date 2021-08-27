@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  MatchedGeoEffect
-//
-//  Created by KAWRANTIN LE GOFF on 05/08/2021.
-//
-
 import SwiftUI
 
 /// Sources
@@ -12,20 +5,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-            NavigationView {
-                List {
-                    NavigationLink("Unwrapping fields", destination: UnwrappingFields())
+        NavigationView {
+            List {
+                NavigationLink("Unwrapping fields", destination: UnwrappingFields())
 
-                    NavigationLink("Apple music player", destination: AppleMusicPlayer())
+                NavigationLink("Apple music player", destination: AppleMusicPlayer())
 
-                    NavigationLink("Expanding items", destination: GridExpandingItems())
+                NavigationLink("Expanding items", destination: GridExpandingItems())
 
-                    NavigationLink("Pickers", destination: Pickers())
-                    
-                    NavigationLink("Some Layouts", destination: Layouts())
-                }
-                .navigationTitle("Matched Geometry")
+                NavigationLink("Pickers", destination: Pickers())
+
+                NavigationLink("Some Layouts", destination: Layouts())
+
+                NavigationLink("Card Drawer", destination: CardDrawer())
             }
+            .navigationTitle("Matched Geometry")
+        }
     }
 }
 
