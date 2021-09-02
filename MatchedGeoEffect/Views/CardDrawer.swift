@@ -41,6 +41,9 @@ struct CardDrawer: View {
                                     selectedColor = color
                                 }
                             }
+                    } else {
+                        Spacer()
+                            .frame(width: 100)
                     }
                 }
             }
