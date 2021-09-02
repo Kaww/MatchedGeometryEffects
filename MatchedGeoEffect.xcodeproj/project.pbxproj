@@ -18,6 +18,7 @@
 		59B5A95F26BEEB1B00E74861 /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B5A95E26BEEB1B00E74861 /* Layouts.swift */; };
 		90C5689226D9064F0004EEF0 /* Toto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5689126D9064F0004EEF0 /* Toto.swift */; };
 		90C5689426D909270004EEF0 /* CardDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5689326D909270004EEF0 /* CardDrawer.swift */; };
+		90E8CB2626E147E900711CE4 /* TwoViewsTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8CB2526E147E900711CE4 /* TwoViewsTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		59B5A95E26BEEB1B00E74861 /* Layouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
 		90C5689126D9064F0004EEF0 /* Toto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toto.swift; sourceTree = "<group>"; };
 		90C5689326D909270004EEF0 /* CardDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDrawer.swift; sourceTree = "<group>"; };
+		90E8CB2526E147E900711CE4 /* TwoViewsTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewsTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,15 @@
 		59B5A94226BC712C00E74861 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				90E8CB2526E147E900711CE4 /* TwoViewsTransition.swift */,
+				90E8CB2426E147AF00711CE4 /* More Examples */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90E8CB2426E147AF00711CE4 /* More Examples */ = {
+			isa = PBXGroup;
+			children = (
 				90C5689326D909270004EEF0 /* CardDrawer.swift */,
 				59B5A93E26BC6EB000E74861 /* UnwrappingFields.swift */,
 				59B5A94026BC6FC500E74861 /* AppleMusicPlayer.swift */,
@@ -95,7 +106,7 @@
 				59B5A95E26BEEB1B00E74861 /* Layouts.swift */,
 				90C5689126D9064F0004EEF0 /* Toto.swift */,
 			);
-			path = Views;
+			path = "More Examples";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 				59B5A94126BC6FC500E74861 /* AppleMusicPlayer.swift in Sources */,
 				59B5A94426BC84AE00E74861 /* GridExpandingItems.swift in Sources */,
 				59B5A93F26BC6EB000E74861 /* UnwrappingFields.swift in Sources */,
+				90E8CB2626E147E900711CE4 /* TwoViewsTransition.swift in Sources */,
 				5985419126BBC92D0057BF3B /* MatchedGeoEffectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,19 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                NavigationLink("Two views transition", destination: TwoViewsTransition())
+
+                NavigationLink("More examples", destination: OtherExamples())
+            }
+            .navigationTitle("Matched Geometry")
+        }
+    }
+}
+
+struct OtherExamples: View {
+    var body: some View {
+        NavigationView {
+            List {
                 NavigationLink("Unwrapping fields", destination: UnwrappingFields())
 
                 NavigationLink("Apple music player", destination: AppleMusicPlayer())
@@ -19,7 +32,7 @@ struct ContentView: View {
 
                 NavigationLink("Card Drawer", destination: CardDrawer())
             }
-            .navigationTitle("Matched Geometry")
+            .navigationTitle("Other examples")
         }
     }
 }
