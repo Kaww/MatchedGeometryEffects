@@ -11,9 +11,9 @@ struct ContentView: View {
 
                 NavigationLink("View guided by source", destination: ViewGuidedBySource())
 
-                NavigationLink("More examples", destination: OtherExamples())
+                NavigationLink("+ More examples", destination: OtherExamples())
             }
-            .navigationTitle("Matched Geometry")
+            .navigationTitle("Matched Geometries")
         }
     }
 }
@@ -21,17 +21,17 @@ struct ContentView: View {
 struct OtherExamples: View {
     var body: some View {
         List {
+            NavigationLink("Pickers", destination: Pickers())
+            NavigationLink("Card Drawer", destination: CardDrawer())
+
             NavigationLink("Unwrapping fields", destination: UnwrappingFields())
 
             NavigationLink("Apple music player", destination: AppleMusicPlayer())
 
             NavigationLink("Expanding items", destination: GridExpandingItems())
 
-            NavigationLink("Pickers", destination: Pickers())
-
             NavigationLink("Some Layouts", destination: Layouts())
 
-            NavigationLink("Card Drawer", destination: CardDrawer())
         }
         .navigationTitle("Other examples")
     }
