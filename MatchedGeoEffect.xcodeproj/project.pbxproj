@@ -19,6 +19,7 @@
 		90C5689426D909270004EEF0 /* CardDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C5689326D909270004EEF0 /* CardDrawer.swift */; };
 		90E8CB2626E147E900711CE4 /* TwoViewsTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8CB2526E147E900711CE4 /* TwoViewsTransition.swift */; };
 		90E8CB2826E14AA300711CE4 /* ViewGuidedBySource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8CB2726E14AA300711CE4 /* ViewGuidedBySource.swift */; };
+		90E8CB2A26E165C100711CE4 /* Limitations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8CB2926E165C100711CE4 /* Limitations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		90C5689326D909270004EEF0 /* CardDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDrawer.swift; sourceTree = "<group>"; };
 		90E8CB2526E147E900711CE4 /* TwoViewsTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewsTransition.swift; sourceTree = "<group>"; };
 		90E8CB2726E14AA300711CE4 /* ViewGuidedBySource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGuidedBySource.swift; sourceTree = "<group>"; };
+		90E8CB2926E165C100711CE4 /* Limitations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Limitations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				90E8CB2526E147E900711CE4 /* TwoViewsTransition.swift */,
 				90E8CB2726E14AA300711CE4 /* ViewGuidedBySource.swift */,
+				90E8CB2926E165C100711CE4 /* Limitations.swift */,
 				90E8CB2426E147AF00711CE4 /* More Examples */,
 			);
 			path = Views;
@@ -181,6 +184,7 @@
 				59B5A95D26BEDC7600E74861 /* Pickers.swift in Sources */,
 				59B5A95F26BEEB1B00E74861 /* Layouts.swift in Sources */,
 				90E8CB2826E14AA300711CE4 /* ViewGuidedBySource.swift in Sources */,
+				90E8CB2A26E165C100711CE4 /* Limitations.swift in Sources */,
 				5985419326BBC92D0057BF3B /* ContentView.swift in Sources */,
 				90C5689426D909270004EEF0 /* CardDrawer.swift in Sources */,
 				59B5A94126BC6FC500E74861 /* AppleMusicPlayer.swift in Sources */,

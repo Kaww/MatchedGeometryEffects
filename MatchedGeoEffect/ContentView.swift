@@ -11,6 +11,8 @@ struct ContentView: View {
 
                 NavigationLink("View guided by source", destination: ViewGuidedBySource())
 
+                NavigationLink("Limitations", destination: Limitations())
+
                 NavigationLink("+ More examples", destination: OtherExamples())
             }
             .navigationTitle("Matched Geometries")
