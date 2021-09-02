@@ -26,14 +26,14 @@ struct GridExpandingItems: View {
     
     private let titleId = "title"
     @Namespace private var titleNamespace
-    
+
     private let subtitleId = "subtitle"
     @Namespace private var subtitleNamespace
-    
+
     private let backgroundId = "background"
     @Namespace private var backgroundNamespace
     
-    @State private var selectedItem: Item?// = Item(id: UUID().uuidString, title: "Item 1", subtitle: "I'm the first item", color: .blue.opacity(0.5))
+    @State private var selectedItem: Item?
     
     var body: some View {
         if let item = selectedItem {

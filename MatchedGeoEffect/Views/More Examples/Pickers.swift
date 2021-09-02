@@ -10,21 +10,65 @@ struct Pickers: View {
     @State private var selectedChoiced: String = "Cheeseburger"
     
     var body: some View {
-        VStack(spacing: 50) {
-            VerticalBallPicker(choices: choices, selected: $selectedChoiced)
-            Divider()
-            HorizontalUnderlinePicker(choices: choices, selected: $selectedChoiced)
-            Divider()
-            DayPicker()
+        ScrollView {
+            VStack(spacing: 50) {
+                VerticalBallPicker(choices: choices, selected: $selectedChoiced)
+                Divider()
+                HorizontalUnderlinePicker(choices: choices, selected: $selectedChoiced)
+                Divider()
+                DayPicker()
+            }
         }
     }
 }
+
+// MARK: Vertical Picker
+
+struct VerticalBallPicker: View {
+    let choices: [String]
+    @Binding var selected: String
+
+    private let size: CGFloat = 25
+    @Namespace private var verticalPickerNamespace
+
+    var body: some View {
+        VStack {
+            ForEach(choices, id: \.self) { item in
+                Button(action: {
+                    withAnimation(.easeOut(duration: 0.3)) {
+                        selected = item
+                    }
+                }) {
+                    HStack {
+                        Circle()
+                            .stroke(selected == item ? Color.accentColor : Color.gray)
+                            .frame(width: size, height: size)
+                            .matchedGeometryEffect(id: item, in: verticalPickerNamespace, properties: .frame)
+
+                        Text(item)
+                            .bold()
+                            .foregroundColor(Color(white: selected == item ? 0.1 : 0.5))
+                    }
+                }
+            }
+        }
+        .overlay(
+            Circle()
+                .fill(Color.accentColor)
+                .matchedGeometryEffect(id: selected, in: verticalPickerNamespace, properties: .frame, isSource: false)
+                .frame(width: size, height: size)
+
+        )
+    }
+}
+
+// MARK: Horizontal Picker
 
 struct HorizontalUnderlinePicker: View {
     let choices: [String]
     @Binding var selected: String
     
-    @Namespace private var ns
+    @Namespace private var horizontalPickerNamespace
     
     var body: some View {
         HStack {
@@ -41,7 +85,7 @@ struct HorizontalUnderlinePicker: View {
                         .background(
                             Color.clear
                                 .frame(height: 3)
-                                .matchedGeometryEffect(id: item, in: ns, properties: .frame, isSource: true)
+                                .matchedGeometryEffect(id: item, in: horizontalPickerNamespace, properties: .frame, isSource: true)
                                 .frame(maxHeight: .infinity, alignment: .bottom)
                         )
                 }
@@ -49,53 +93,15 @@ struct HorizontalUnderlinePicker: View {
         }
         .overlay(
             Color(white: 0.1)
-                .matchedGeometryEffect(id: selected, in: ns, properties: .frame, isSource: false)
+                .matchedGeometryEffect(id: selected, in: horizontalPickerNamespace, properties: .frame, isSource: false)
         )
     }
 }
 
-struct VerticalBallPicker: View {
-    let choices: [String]
-    @Binding var selected: String
-    
-    private let size: CGFloat = 25
-    
-    @Namespace private var ns
-    
-    var body: some View {
-        VStack {
-            ForEach(choices, id: \.self) { item in
-                Button(action: {
-                    withAnimation(.easeOut(duration: 0.3)) {
-                        selected = item
-                    }
-                }) {
-                    HStack {
-                        Circle()
-                            .stroke(selected == item ? Color.accentColor : Color.gray)
-                            .frame(width: size, height: size)
-                            .matchedGeometryEffect(id: item, in: ns, properties: .frame)
-                        
-                        Text(item)
-                            .bold()
-                            .foregroundColor(Color(white: selected == item ? 0.1 : 0.5))
-                    }
-                }
-            }
-        }
-        .overlay(
-            Circle()
-                .fill(Color.accentColor)
-//                .border(Color.black)
-                .matchedGeometryEffect(id: selected, in: ns, properties: .frame, isSource: false)
-                .frame(width: size, height: size)
-//                .border(Color.red)
-        )
-    }
-}
+// MARK: Weekday Picker
 
 struct DayPicker: View {
-    @Namespace private var ns
+    @Namespace private var dayPickerNamespace
 
     @State private var selectedDay: String = "Monday"
     
@@ -121,7 +127,7 @@ struct DayPicker: View {
         .overlay(
             RoundedRectangle(cornerRadius: 10, style: .continuous)
                 .stroke(Color.blue, lineWidth: 2.5)
-                .matchedGeometryEffect(id: selectedDay, in: ns, isSource: false)
+                .matchedGeometryEffect(id: selectedDay, in: dayPickerNamespace, isSource: false)
         )
     }
     
@@ -139,7 +145,7 @@ struct DayPicker: View {
                     selectedDay = day
                 }
             }
-            .matchedGeometryEffect(id: day, in: ns)
+            .matchedGeometryEffect(id: day, in: dayPickerNamespace)
     }
 }
 

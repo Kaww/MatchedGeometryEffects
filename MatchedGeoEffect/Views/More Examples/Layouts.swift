@@ -6,14 +6,16 @@ struct Layouts: View {
             Text("Layouts")
                 .font(.title)
             
-            HStack {
-                VStack {
-                    LayoutSwap()
-                    LayoutSwap()
-                }
-                VStack {
-                    LayoutSwap()
-                    LayoutSwap()
+            VStack {
+                HStack {
+                    VStack {
+                        LayoutSwap()
+                        LayoutSwap()
+                    }
+                    VStack {
+                        LayoutSwap()
+                        LayoutSwap()
+                    }
                 }
             }
         }
